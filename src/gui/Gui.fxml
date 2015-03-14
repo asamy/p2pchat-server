@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="392.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GuiController">
+   <children>
+      <TabPane layoutX="-100.0" layoutY="-90.0" prefHeight="276.0" prefWidth="289.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Server">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="startServer" layoutX="14.0" layoutY="324.0" mnemonicParsing="false" onAction="#startServer" prefHeight="25.0" prefWidth="70.0" text="Start" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+                        <Button fx:id="stopServer" layoutX="84.0" layoutY="324.0" mnemonicParsing="false" onAction="#stopServer" prefHeight="25.0" prefWidth="70.0" text="Stop" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="100.0" />
+                        <TextArea fx:id="textAreaConnections" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="282.0" prefWidth="322.0" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="10.0" />
+                        <ListView fx:id="listConnections" layoutX="342.0" layoutY="27.0" prefHeight="343.0" prefWidth="155.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Logged">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listLogged" layoutX="254.0" layoutY="23.0" prefHeight="343.0" prefWidth="212.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Packets Received">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="pakcetRecieved" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="338.0" prefWidth="480.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Packets Sent">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="packetSent" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="337.0" prefWidth="486.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Exceptions">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="exceptions" editable="false" layoutX="154.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
